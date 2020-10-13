@@ -1,0 +1,70 @@
+<ion-header [translucent]="true" >
+  <ion-row size="12"></ion-row>
+      <ion-col></ion-col>
+    <ion-toolbar>
+      <img alt="logo" src="assets/rebelred.svg"> 
+        <ion-buttons slot="end">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="title-page"> We do whatever it takes! </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger">
+  <ion-card *ngFor="let article of articles; index as i" (click)="viewDetails(i)">
+    <ion-card-header>
+      <div *ngIf="article.urlToImage; else elseBlock">     
+         <ion-img src="{{article.urlToImage}}"></ion-img>
+      </div>
+      <ng-template #elseBlock>
+        <img src="assets/images/inf.png"> </ng-template>
+    </ion-card-header>
+    <ion-card-content>
+     <h2>"{{article.title}}"</h2>
+      <h3>"{{article.description}}"</h3>
+     <p>Author:{{article.author}}</p>
+      
+    </ion-card-content>
+    
+  </ion-card>
+
+
+<!-- // Try First -->
+
+
+
+<!-- // End of Try -->
+<!-- 
+  <ion-list></ion-list> -->
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="crescent"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  
+ </ion-content>
+
+
+<!-- // FOOTER -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="account">
+          <ion-icon></ion-icon>
+
+        </ion-tab-button>
+        <ion-tab-button tab="contact">
+          <ion-icon size="1"></ion-icon>
+            <ion-img src="assets/icon/rebelsports-logo.png" style="width: 45px; height: 45;"></ion-img>
+        </ion-tab-button>
+<!--  -->
+        <ion-tab-button tab="settings">
+          <ion-icon></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

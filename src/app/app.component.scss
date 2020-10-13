@@ -1,0 +1,153 @@
+
+* {
+    font-family: 'Microsoft Yi Baiti';
+    background-color: #b3b3b3, transparent;
+  }
+  
+  .span {
+    background-color: #b3b3b3, transparent, absolute;
+  }
+  .menu-header-bg {
+    height: 25vh;
+    background: #eb445a;
+    margin: 0;
+    width: auto;
+    padding: 0;
+    h3 {
+      position: static;
+      top: 10%;
+      width: 100%;
+      text-align: center;
+    }
+    .header-content{
+      // position: absolute;
+      // font-size: 32px, bold;
+      // top: 20px;
+      // left: 15px;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      ion-text {
+        h2 {
+          color: black;
+        }
+      }
+      img {
+        width: 31vw;
+        height: 11vh;
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px 10px #844b4b;
+        margin: auto;
+        position: relative;
+        top: 30px;
+      }
+    
+      h2 {
+        font: Roboto, "Helvetica Neue", sans-serif;
+        font-weight: 100;
+        color: #000000;
+      }
+      
+      p{
+        // font-size: 12px;
+        color: #ffffff;
+        // font-weight: 100;
+        // letter-spacing: 0.4px;
+      }
+
+      .ion-label-names {
+        
+        margin-left: 10px;
+
+      }
+      
+      .ion-footer-bg-color {
+        background: #eb445a;
+      }
+
+      .ion-text-color {
+        --ion-text-color: #ffffff;
+      }
+
+    }
+  }
+  
+  .action-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  
+    ion-button {
+      text-transform: capitalize, bold, center;
+      font-weight: 300;
+      color: #000000;
+      --background: #00fbff;
+      --border-radius: 7px;
+      --box-shadow: none;
+    }
+  
+    ion-icon{
+      margin: 400px;
+      font-weight: 600;
+    }
+  }
+
+  .menu-items {
+    margin: 0px;
+  
+    ion-icon{
+      margin-right: 20px;
+      color: #000000;
+      font-weight: 800;
+    }
+    ion-item {
+      padding-left: 20px;
+      margin-bottom: 10px;
+      color: #000000;
+      font-size: 24px;
+    }
+    // .nav-links {
+    //   text-decoration: unset !important;
+    // }
+  }
+
+//adjustments
+  .name {
+    display: block;
+    flex: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.image-logo {
+
+  top: 60px !important;
+  left: 90px !important;
+
+}
+toolbar-background {
+  color: var(--ion-background-color);
+}
+
+ion-menu {
+  --ion-background-color: var(--ion-color-light);
+  --ion-text-color: var(--ion-color-light);
+  --color-hover: var(--ion-color-primary-contrast)
+  --highlight-color-focused(--ion-color-primary-contrast);
+
+  ion-toolbar {
+    --background: var(--ion-color-warning);
+  }
+
+  ion-list {/* optional, but this is needed when you use gradient as a background color.*/
+    background: transparent;
+    color: --ion--color-text-dark;
+  }
+
+  footer-bg-color {
+    --ion-background-color: #eb445a;
+  }
+}
+

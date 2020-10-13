@@ -1,0 +1,37 @@
+ion-header {
+  ion-toolbar {
+    width: 100vw;
+    height: 10vh;
+    padding: .5rem;
+    padding-left: 12px;
+    img {
+      width: 50%;
+      padding-left: -30px;
+    }
+    .title-page {
+      // width: fit-content;
+      padding: 0;
+      
+    }
+  }
+}
+
+main.inner-scroll.scroll-y {
+  background-color: red;
+}
+
+.inner-scroll{
+  background-color: red!important;
+}
+
+.card-color-bg {
+  background-color: #ffffff!important;
+}
+
+ion-card {
+  background-color:  #ffffff;
+  }
+
+.articles-background-color {
+    --ion-background-color:#ffc409!important;
+}

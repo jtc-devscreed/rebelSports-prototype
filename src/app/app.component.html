@@ -1,0 +1,55 @@
+<ion-app>
+    <ion-menu menuId="main-menu" content-id="main" class="bottom-background">
+    
+      <ion-content text>
+        <div class="menu-header-bg">
+          <div class="header-content image-logo" >
+            <img src="../assets/rebelsports-logo.png" alt="">
+            <h3 color="light" strong> Rebel Sports </h3>
+          </div>
+         
+        </div>
+
+          <div>
+            <ion-menu-toggle>
+              <ion-list color="dark">
+                
+                <ion-item lines="full"
+                  slot="start"
+                  routerLink="../home">
+                  <ion-icon name="newspaper" color="dark"></ion-icon>
+                  <ion-label color="dark" class="ion-margin"> READ ARTICLES </ion-label>  
+                </ion-item>
+                
+                <ion-item lines="full"
+                  slot="start"
+                  routerLink="../videos">
+                  <ion-icon name="videocam" color="dark"></ion-icon>
+                  <ion-label color="dark" class="ion-margin"> WATCH VIDEOS </ion-label>
+                </ion-item>
+
+                <ion-item lines="full"
+                  slot="start"
+                  routerLink="../teams">
+                  <ion-icon name="people" color="dark"></ion-icon>
+                  <ion-label color="dark" class="ion-margin"> TEAMS & PLAYERS </ion-label>
+                </ion-item>
+
+              </ion-list>
+              </ion-menu-toggle>
+          </div>
+      </ion-content>
+     
+      <ion-footer>
+        <ion-toolbar color="danger">
+          <ion-title></ion-title>
+        </ion-toolbar>
+      </ion-footer>
+      </ion-menu>
+      <ion-router-outlet id="main"></ion-router-outlet>            
+
+
+
+
+
+</ion-app>

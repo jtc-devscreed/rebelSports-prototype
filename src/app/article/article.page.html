@@ -1,0 +1,56 @@
+<ion-header [translucent]="true" >
+    <ion-row> </ion-row>
+      <ion-col></ion-col>
+      <ion-toolbar>
+          <img alt="logo" src="assets/rebelred.svg">
+            <ion-buttons slot="end">
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+          <ion-title style="padding: 0; font-size: small;">
+            We do whatever it takes!
+          </ion-title>
+      </ion-toolbar>      
+</ion-header>
+
+<ion-content class="articles-background-color">
+  
+    <ion-card class="articles-background-color-card" 
+    *ngIf="isLoading == true">
+
+    <ion-card-header>
+        <ion-img src="{{ dataDetails.urlToImage }}"></ion-img>
+        <h3>"{{ dataDetails.title }}"</h3>
+      </ion-card-header>
+      <ion-card-content>
+      <h4> "{{ dataDetails.description }}" </h4>
+      <h5> "{{ dataDetails.content }}" </h5>
+      <h6> URL:"{{ dataDetails.url }}" </h6>
+      <p>Author: "{{ dataDetails.author }}" </p>
+      </ion-card-content>
+
+      <ion-toolbar lines="true">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+          <ion-icon name="newspaper" size="large"></ion-icon>
+          </ion-buttons>      
+      </ion-toolbar>
+    </ion-card>     
+
+</ion-content>
+
+
+ <!-- <FOOTER> -->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar>
+          
+          <!-- <ion-tab-button tab="contact"> -->
+            <ion-icon size="1"></ion-icon>
+              <ion-img src="assets/icon/rebelsports-logo.png" style="width: 45px; height: 45;"></ion-img>
+          <!-- </ion-tab-button> -->
+  
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,32 @@
+ion-header {
+  ion-toolbar {
+    width: 100vw;
+    height: 10vh;
+    padding: .5rem;
+    padding-left: 12px;
+    img {
+      width: 50%;
+      padding-left: -30px;
+    }
+    .title-page {
+      // width: fit-content;
+      padding: 0;
+      
+    }
+  }
+}
+
+
+
+.articles-background-color {
+  --ion-background-color: #e82828!important;
+}
+
+.articles-background-color-card {
+    --ion-background-color: #ffffff!important;
+}
+
+.articles-background-color-text {
+  --ion-text-color: #000000!important;
+}
+
