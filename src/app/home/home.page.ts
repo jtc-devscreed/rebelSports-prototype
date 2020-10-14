@@ -35,8 +35,8 @@ export class HomePage  {
 
   ionViewDidEnter() {
     this.serviceApi.getNews().subscribe((data) => {
-      this.articles = data.articles;
-      console.log (data.articles);
+      this.articles = data['articles'];
+      console.log (data);
     });
   }
 

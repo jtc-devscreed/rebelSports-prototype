@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./videos.page.scss'],
 })
 export class VideosPage implements OnInit {
+  articles;
   videoDetails;
   isLoading = false;
   constructor(

@@ -9,6 +9,7 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ['./article.page.scss'],
 })
 export class ArticlePage implements OnInit {
+  articles;
   dataDetails;
   myId;
 
@@ -34,8 +35,7 @@ export class ArticlePage implements OnInit {
         console.log(data.id);
       });
       this.serviceApi.getNews().subscribe((data)=>{
-          this.dataDetails =
-          data.articles[this.myId]
+          this.dataDetails =data['articles'];
         // this.dataTeam = data.sports[0].leagues[0].teams.filter((arr)=>{
         //     return arr.team.id == this.teamId.toString();
         // });
