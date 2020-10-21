@@ -1,12 +1,12 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "sportsArticle",
+  "appId": "io.ionic.soccerjuice",
+  "appName": "Soccer Juice",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 3000
     }
   },
   "cordova": {}

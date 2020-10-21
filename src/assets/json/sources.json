@@ -1,0 +1,201 @@
+{
+    "news":  [
+        {
+            "id": 1,
+            "title": "An Introduction to Soccer!",
+            "urlToImage": "assets/images/home/oldball.jpeg",
+            "desc": "Football (aka Soccer) is probably one of the oldest sports in the world. Also, it is one of the most recognized. The Footbal World Cup is the pinnacle when it comes to international games. Also, there are Tournaments such as the Euro Championships, Copa America and the African Cup of Nations. In terms of domestically the strongest leagues come from England (English Premier League), Spain (La Liga), Italy (Serie A) and Germany (Bundesliga). In some parts of the world the sport is also known as Soccer.",
+            "owner": "Mong Mong",
+            "credits": "Contents: rulesofsport"
+        },
+        {
+            "id": 2,
+            "title": "An empty blue themed stadium",
+            "urlToImage": "assets/images/home/bluestadium.jpg",
+            "desc": "A blue themed stadium sits empty during end of seasons.",            
+            "owner": "Artem Saranin",
+            "credits": ""
+        },
+        {
+            "id": 3,
+            "title": "A Red Soccer Stadium packed with expectators during daylight!",
+            "urlToImage": "assets/images/home/packedstadium.jpeg",
+            "desc": "Moments of breath-taking events elevates for expectators watching a live game.",
+            "owner": "Robert Hernandez",
+            "credits": ""
+        },
+        {
+            "id": 4,
+            "title": "A late night Soccer Match filled with expectators!",
+            "urlToImage": "assets/images/home/redstadium.jpeg",
+            "desc": "Soccer Fans waving their flags to cheer their teams during the highlight of a late night soccer match.",
+            "owner": "Riccardo Bresciani",
+            "credits": ""
+        },
+        {
+            "id": 5,
+            "title": "A Miniature Stadium!",
+            "urlToImage": "assets/images/home/miniaturestadium.jpeg",
+            "desc": "Don't be fooled by this picture. At this angle, the stadium looked like a miniature replica of the actual stadium.",
+            "owner": "David Mcbee",
+            "credits": ""
+        },
+        {
+            "id": 6,
+            "title": "Soccer Fields AKA Pitches",
+            "urlToImage": "assets/images/home/soccerfield-green-ls.jpeg",
+            "desc": "A soccer team consists of eleven (11) players. Per team there is one (1) goalkeeper and ten (10) outfield players.",
+            "owner": "Mike@Pixabay",
+            "credits": ""
+        },
+        {
+            "id": 7,
+            "title": "Player Compositions",
+            "urlToImage": "assets/images/home/soccerteam.jpeg",
+            "desc": "A soccer team consists of eleven (11) players. Per team there is one (1) goalkeeper and ten (10) outfield players. Additionally, players wear studded footbal boots (for better ground grip), shin pads (leg guards for protection) and matching strips. Goalkeepers are allowed to additionally wear padded gloves as they the only team member allowed to handle the ball by hands. And finally, each team has a designated captain.",
+            "owner": "Mike@Pixabay",
+            "credits": "rulesofsport"
+        },
+        {
+            "id": 8,
+            "title": "Equipments",
+            "urlToImage": "assets/images/home/shoes&ball.jpg",
+            "desc": "A sample soccer shoes & a soccer ball over green field of grass.",
+            "owner": "Pixabay",
+            "credits": ""
+        },
+        {
+            "id": 9,
+            "title": "Scoring",
+            "urlToImage": "assets/images/home/goal.jpeg",
+            "desc": "To score a goal, the ball must be thrown inside the net beyond the line for it to be a legitimate goal. A player can score a goal using any part of his/her body except the hand or arm up to the shoulder. The goal itself consists of a frame that measures 8 feet high and 8 yards wide.",
+            "owner": "RF Studio",
+            "credits": ""
+        },
+        {
+            "id": 10,
+            "title": "Winning the Game!",
+            "urlToImage": "assets/images/home/scream.jpeg",
+            "desc": "To win, a team should score more goals than the other team. If the score are tied after 90 minutes then the game will end as a draw apart from in cup games where the game can go to extra time and may even have a penalty shootout to decide the winner. Players can only use their feet to kick the ball and strictly prohibited to use any of their hands except for the goalkeeper.",
+            "owner": "Pixabay",
+            "credits": ""
+        }
+    ],
+    "rules": [
+        {
+            "id": 1,
+            "title": "Match/Game Length:",
+            "urlToImage": "",
+            "desc": "A single match is composed of two 45 minute halves with a 15 minute break or rest period in between.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 2,
+            "title": "Number of Players per Team",
+            "urlToImage": "",
+            "desc": "A soccer team must have a minimum of 11 players which includes 1 goalkeeper who is the only player allowed to handle ball by hands within the 18 yard box and a maximum of seven (7) players are needed to start a match.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 3,
+            "title": "Field / Pitches",
+            "urlToImage": "",
+            "desc": "A Soccer Field, also known as a Pitch can be made of natural grass or artificial grass. The size of pitches (soccer fields), varies from 100-130 yards long and 50-100 yards wide. A pitch should also have a rectangular mark that shows the outside which is out of bounds. Two 6 yard boxes, Two 18 yard boxes and circle in the center. Also, a spot of penalty place 12 yards out of both goals and center circle must also be visible.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 4,
+            "title": "Ball Size",
+            "urlToImage": "",
+            "desc": "The ball should also have a circumference of 58-61cm and be of a circular shape.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 5,
+            "title": "Substitutions",
+            "urlToImage": "",
+            "desc": "A team can choose 7 substitute players. Substitutions can be made at any time during match with a maximum of 3 substitutions per side. In the event that all 3 maximum substitutions have already been used and a player having to leave the field for injury, the remaining team members will be forced to play withou a replacement for that player.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 6,
+            "title": "Referee & 2 Assistant Referee's (Linesmen)",
+            "urlToImage": "",
+            "desc": "Each game must have one referee and 2 assistant referees which are also called, the Linesmen. The job of the referee is to act as the time keeper and to make decisions such as fouls, free kicks, throw ins, penalties and added on time at the end of each half. The referee may consult the assistant referees at any time in the match regarding a decision. It is the Linesmen (Assistant Referees) job to spot offside's in the match, throw ins for either team and also assist the referee in all decision making processes which may be deemed necessary.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 7,
+            "title": "Overtime",
+            "urlToImage": "",
+            "desc": "If the game needs to have an extra time as a result of both teams scores tied at the end of a match. An addition 30 minutes will be added in the form of two 15 minute halves after 90 minutes as overtime.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 8,
+            "title": "Penalty Shoo",
+            "urlToImage": "",
+            "desc": "After the overtime and the team scores are still tied, then a penalty shootout must take place.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 9,
+            "title": "Goal Requirements",
+            "urlToImage": "",
+            "desc": "The entire ball must cross the goal line for it to formally called a goal.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 10,
+            "title": "Yellow & Red Cards",
+            "urlToImage": "",
+            "desc": "When a player committed a foul, that player could receive a yellow or a red card depending on the weight of the foul which will be  decided by the referee with the referee's discretion. The yellow card is warning while the red card is a dismissal of a certain player who committed a foul. Once a player is sent off, they cannot be replaced.",
+            "owner": "",
+            "credits": ""
+        },
+        {
+            "id": 11,
+            "title": "Throw Ins, Goal Kicks, & Corner Kicks",
+            "urlToImage": "",
+            "desc": "If a ball goes out of play off an opponent in either of the side lines then a throw in will be given. If it goes out of play off an attacking player on the base line then it is a gold kick. If the ball comes off a defending player, then it will be a corner kick.",
+            "owner": "",
+            "credits": ""
+        }
+    ],
+    "Offside Rules": [
+        {
+            "id": 1,
+            "title": "Offside Rules #1",
+            "urlToImage": "assets/images/offside/o1.jpeg",
+            "desc": "An attacking player can be called Offside if he is in front of the last defender when the pass is played through to them. The offside area is designed to discourage players from simply hanging around the opponent’s goal waiting for a tricky pass. ",
+            "owner": "",
+            "credits": "Tom Fisk"
+        },
+        {
+            "id": 2,
+            "title": "Offside Rules #2",
+            "urlToImage": "assets/images/offside/o1.jpeg",
+            "desc": "For a player to be onside, the play must be placed behind the position of the last defender when the ball is played to them. If an attacking player is in front of that last defender then he is deemed to be offside and therefore a free kick for the defending team will be called.",
+            "owner": "",
+            "credits": "Juan Salamanca"
+        },
+        {
+            "id": 3,
+            "title": "Offside Ruels #3",
+            "urlToImage": "assets/images/offside/o2.jpeg",
+            "desc": "A player cannot be caught offside in their own half of the field. Also, the  goalkeeper does not count as a defender on which he can't be charged of any violation. If the ball is played backwards and the player is in front of the last defender then he is not deemed to be offside.",
+            "owner": "",
+            "credits": "nmr hrd"
+        }
+
+    ]
+}

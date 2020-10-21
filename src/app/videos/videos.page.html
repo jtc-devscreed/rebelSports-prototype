@@ -11,155 +11,45 @@
 
 
 <ion-content color="danger">
-<ion-grid>
-    <div>
-      <ion-grid>
-        <ion-col></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3 class="ion-no-margin"> Basketball player dribbling ball </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/1/Basketball.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>
-            </ion-card-header>    
-              <ion-card-content>                
-                  <ion-text>"A person wearing black basketball sneakers and black and white basketball shorts dribbles a basketball in between his widespread legs." --Credits to owner: EdgarFernandez from Mixkit. </ion-text>
-              </ion-card-content>
-          </ion-card>        
-      </ion-grid>
-    </div>
-    
-    <div>
-      <ion-grid >
-        <ion-col></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3> Cricket court in a stadium </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/2/Cricket.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>                
-            </ion-card-header>    
-                <ion-card-content>                
-                    <ion-text>"Slow video footage inside a Cricket Stadium.." --Credit to owner from MixKit..</ion-text>
-                </ion-card-content>
-        </ion-card>        
-      </ion-grid>
-    </div>
+  <ion-row>
+    <ion-col size="12" *ngFor="let rule of rules">
+      <ion-card>
+        <ion-card-header>
+          <h2> {{rule.label}} </h2>
+          
+        </ion-card-header>
+          <ion-card-content>
+          <h1> "{{rule.title}}" </h1>
+          <ion-img src="{{rule.img}}"></ion-img>
+          <br>
+          <h3> "{{rule.desc}}" </h3>
+          <br>
+          <i><b> Photo Credits to: {{ rule.credits}}</b></i>
 
-    <div>
-      <ion-grid >
-        <ion-col size="12"></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3> Jogging behind a man in the park </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/3/Jogging.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>                
-            </ion-card-header>    
-                <ion-card-content>                
-                    <ion-text> "Back view of a man wearing a red t-shirt jogging on a trail in a park, trees on both sides." --Credits to owner: EdgarFernandez from Mixkit.. </ion-text>            
-                </ion-card-content>
-          </ion-card>        
-      </ion-grid>
-    </div>
 
-    <div>
-      <ion-grid >
-        <ion-col size="12"></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3> Mountain Cyclist on the path </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/4/Cyclist.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>                
-            </ion-card-header>    
-                <ion-card-content>                
-                  <ion-text> "Mountain Cyclists racing in a mountain track." -Credits to owner from Mixkit </ion-text>            
-                </ion-card-content>
-          </ion-card>        
-      </ion-grid>
-    </div>
 
-    <div>
-      <ion-grid >
-        <ion-col size="12"></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3> Young duo playing soccer at night </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/5/Soccer.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>                
-            </ion-card-header>    
-                <ion-card-content>                
-                  <ion-text> "description": "Young soccer player making a tunnel and scoring a goal on an old soccer field at night with a worn wall in the background." -Credits to owner: EdgarFernandez from Mixkit.. </ion-text>            
-                </ion-card-content>
-          </ion-card>        
-      </ion-grid>
-    </div>
+          </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 
-    <div>
-      <ion-grid >
-        <ion-col size="12"></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3> Person swimming in a pool </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/6/Swimming.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>                
-            </ion-card-header>    
-                <ion-card-content>                
-                  <ion-text> "description": "A male swimmer in an outdoor pool seen from the air." -Credits to owner: MarcoLopez from Mixkit </ion-text>          
-                </ion-card-content>
-          </ion-card>        
-      </ion-grid>
-    </div>
+  <!-- infinite scroll -->
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="crescent"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>  
 
-    <div>
-      <ion-grid >
-        <ion-col size="12"></ion-col>
-          <ion-card class="title-page" class="videos-background-color-cards">
-            <ion-card-header>
-                <h3> Woman doing warm up exercises </h3>
-                <video width="100%" height="auto" autoplay loop>
-                  <source src="assets/videos/7/warmup.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />                            
-                </video>
-                
-            </ion-card-header>    
-                <ion-card-content>                
-                  <ion-text> "description": "A young woman with her long hair in a ponytail wearing active-wear jumps and does other warm up exercises on a running track, with trees and city skyline in the background." -Credits to owner: FranciscoFonseca from Mixkit </ion-text>            
-                </ion-card-content>
-          </ion-card>        
-      </ion-grid> 
-    </div>
+</ion-content>    
 
-    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
-      <ion-infinite-scroll-content
-        loadingSpinner="crescent"
-        loadingText="Loading more data...">
-      </ion-infinite-scroll-content>
-    </ion-infinite-scroll> 
 
-  </ion-grid>
-</ion-content>
-
- <!-- <FOOTER> -->
 <ion-footer>
   <ion-toolbar>
     <ion-tabs>
       <ion-tab-bar>
-        
-        <!-- <ion-tab-button tab="contact"> -->
-          <ion-icon size="1"></ion-icon>
-            <ion-img src="assets/icon/rebelsports-logo.png" style="width: 45px; height: 45;"></ion-img>
-        <!-- </ion-tab-button> -->
-
+          <ion-icon></ion-icon>
+            <ion-img src="assets/icon/rebelsports-logo.png" style="width: 45px; height: 45;"></ion-img>        <!-- </ion-tab-button> -->
       </ion-tab-bar>
     </ion-tabs>
   </ion-toolbar>

@@ -1,22 +1,34 @@
-import { Component, ViewChild } from '@angular/core';
+import { DataJsonService } from './../service/data-json.service';
+import { ActivatedRoute } from '@angular/router';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { IonInfiniteScroll, NavController } from '@ionic/angular';
-import { ServiceapiService } from '../services/serviceapi.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage  {
+export class HomePage implements OnInit {
   @ViewChild(IonInfiniteScroll)infiniteScroll: IonInfiniteScroll;
-  articles;
+
+
+  // declare object
+  datas: any [] ;
+
+
   constructor(
-    private serviceApi: ServiceapiService,
-    private nav: NavController
+    private nav: NavController,
+    private actRoute: ActivatedRoute,
+    private dataAPI: DataJsonService
   ) {}
 
 
-   loadData(event) {
+  ngOnInit() {
+    this.readData();
+  }
+
+  
+  loadData(event) {
     setTimeout(() => {
       console.log('Done');
       event.target.complete();
@@ -29,20 +41,30 @@ export class HomePage  {
     }, 1000);
 
   }
+
+
   toggleInfiniteScroll() {
     this.infiniteScroll.disabled = !this.infiniteScroll.disabled;
   }
 
-  ionViewDidEnter() {
-    this.serviceApi.getNews().subscribe((data) => {
-      this.articles = data['articles'];
-      console.log (data);
-    });
-  }
-
+  // ionViewDidEnter() {
+  //   // this.serviceApi.getNews().subscribe((data) => {
+  //   //   this.articles = data['articles'];
+  //   //   console.log (data);
+  //   // });
+  // }
 
   viewDetails(id){
      this.nav.navigateForward(['articles/' + id]);
+  }
+
+  //function for json
+  readData() {
+    this.dataAPI.getNews().subscribe((data)=>{
+      console.log(data);
+      this.datas = data.news;
+    }) 
+
   }
 
 }

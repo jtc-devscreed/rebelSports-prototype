@@ -11,21 +11,25 @@
 </ion-header>
 
 <ion-content color="danger">
-  <ion-card *ngFor="let article of articles; index as i" (click)="viewDetails(i)">
-    <ion-card-header>
-      <div *ngIf="article.urlToImage; else elseBlock">     
-         <ion-img src="{{article.urlToImage}}"></ion-img>
-      </div>
-      <ng-template #elseBlock>
-        <img src="assets/images/inf.png"> </ng-template>
-    </ion-card-header>
-    <ion-card-content>
-     <h2>"{{article.title}}"</h2>
-      <h3>"{{article.description}}"</h3>
-     <p>Author:{{article.author}}</p>
-      
-    </ion-card-content>
-    
+  <ion-card *ngFor="let data of datas; index as i" (click)="viewDetails(i)">
+      <ion-card-header>
+        <h2> <b> {{data.title}} </b> </h2>
+          <br>
+          <div *ngIf="data.id; else elseBlock">     
+            <ion-img src= "{{data.urlToImage}}"></ion-img>
+          </div>
+        <ng-template #elseBlock>
+            <img src="assets/images/inf.png"> </ng-template>
+      </ion-card-header>
+        <ion-card-content>        
+          <h3> {{data.desc}} </h3>
+          <br>
+          <i> <b> Credits: </b> </i>
+          <br>
+          <i> <b> Picture by: {{data.owner}} </b> </i>
+          <br>
+          <i> <b> {{data.credits}} </b> </i>
+        </ion-card-content>
   </ion-card>
 
 
@@ -42,8 +46,7 @@
       loadingSpinner="crescent"
       loadingText="Loading more data...">
     </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-  
+  </ion-infinite-scroll>  
  </ion-content>
 
 
@@ -60,7 +63,7 @@
           <ion-icon size="1"></ion-icon>
             <ion-img src="assets/icon/rebelsports-logo.png" style="width: 45px; height: 45;"></ion-img>
         </ion-tab-button>
-<!--  -->
+
         <ion-tab-button tab="settings">
           <ion-icon></ion-icon>
         </ion-tab-button>

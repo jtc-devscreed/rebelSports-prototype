@@ -18,14 +18,14 @@
     *ngIf="isLoading == true">
 
     <ion-card-header>
-        <ion-img src="{{ dataDetails.urlToImage }}"></ion-img>
-        <h3>"{{ dataDetails.title }}"</h3>
+        <ion-img src="{{ datas[myId].urlToImage }}"></ion-img>
+        <h3>"{{ datas[myId].title }}"</h3>
       </ion-card-header>
       <ion-card-content>
-      <h4> "{{ dataDetails.description }}" </h4>
-      <h5> "{{ dataDetails.content }}" </h5>
-      <h6> URL:"{{ dataDetails.url }}" </h6>
-      <p>Author: "{{ dataDetails.author }}" </p>
+      <h4> {{ datas[myId].desc }} </h4>
+      <h5> {{ datas[myId].content }} </h5>
+      <!-- <h6> {{ datas[myId].url }} </h6> -->
+      <p>Author: {{ datas[myId].owner }} </p>
       </ion-card-content>
 
       <ion-toolbar lines="true">
