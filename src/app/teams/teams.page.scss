@@ -1,7 +1,7 @@
 ion-header {
     ion-toolbar {
       width: 100vw;
-      height: 10vh;
+      height: auto;
       padding: .5rem;
       padding-left: 12px;
       img {
@@ -9,9 +9,7 @@ ion-header {
         padding-left: -30px;
       }
       .title-page {
-        // width: fit-content;
         padding: 0;
-        
       }
     }
   }
@@ -21,23 +19,6 @@ ion-header {
     font-size: small;
 }
 
-  .articles-background-color {
-    --ion-background-color: #e82828!important;
-  }
-
-  .articles-background-color-card {
-      --ion-background-color: #ffffff!important;
-  }
-
-  .articles-background-color-dark {
-      --ion-background-color: #000000!important;
-  }
-
-  .articles-text-color-dark {
-      --ion-text-color: #000000!important;
-
-  }
-
   ion-title.large-title {    
     font-size: 30px;
   }
@@ -45,7 +26,7 @@ ion-header {
   ion-title.small-title {
     font-size: 5px;
   }
-  //TEST AREA FOR ION-SLIDES
+
   :root {
     --ion-safe-area-top: 20px;
     --ion-safe-area-bottom: 22px;   

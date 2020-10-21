@@ -59,7 +59,7 @@ offsides = [
   readData() {
     this.http.get<any>('/assets/json/sources.json').subscribe((data) => {
       console.log(data);
-      console.log('testing101');
+      console.log('lilipad! lilipad! takure!!!');
       return this.datas = data.rules;
     });
   }

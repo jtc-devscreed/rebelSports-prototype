@@ -1,7 +1,7 @@
 ion-header {
     ion-toolbar {
       width: 100vw;
-      height: 10vh;
+      height: auto;
       padding: .5rem;
       padding-left: 12px;
       img {
@@ -9,27 +9,10 @@ ion-header {
         padding-left: -30px;
       }
       .title-page {
-        // width: fit-content;
         padding: 0;
-        
       }
     }
   }
-
-
-
-  .videos-background-color {
-    --ion-background-color:#e82828!important;
-  }
-
-  .videos-background-color-cards {
-    --ion-background-color: #ffffff!important;
-  }
-
-  .videos-articles-background-color-text {
-    --ion-text-color: #000000!important;
-  }
-  
 
   .elips-5{
     overflow: hidden;
@@ -46,10 +29,6 @@ ion-header {
     text-align: center;
     padding: 0;
   }
-
-.circles-spin {
-  color: white;
-}
 
 .footer-icons-red {
   --ion-color: #e82828;

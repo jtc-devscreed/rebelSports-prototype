@@ -4,16 +4,17 @@
     background-color: #b3b3b3, transparent;
   }
 
-
   .span {
     background-color: #b3b3b3, transparent, absolute;
   }
+
   .menu-header-bg {
-    height: 25vh;
-    background: #eb445a;
+    height: 23vh;
+    // background-color: #000000;
     margin: 0;
     width: auto;
     padding: 0;
+    top: 0;
     h3 {
       position: static;
       top: 10%;
@@ -21,23 +22,20 @@
       text-align: center;
     }
     .header-content{
-      // position: absolute;
-      // font-size: 32px, bold;
-      // top: 20px;
-      // left: 15px;
       height: 100%;
       display: grid;
       align-items: center;
-      ion-text {
-        h2 {
-          color: black;
-        }
+      // ion-text {
+      //   // h2 {
+      //   //   color: black;
+      //   // }
       }
+
       img {
         width: 31vw;
-        height: 11vh;
+        height: 13vh;
         border-radius: 50%;
-        box-shadow: 0px 0px 6px 10px #844b4b;
+        box-shadow: 0px 0px 6px 10px #877c7c;
         margin: auto;
         position: relative;
         top: 30px;
@@ -55,7 +53,10 @@
         // font-weight: 100;
         // letter-spacing: 0.4px;
       }
-
+      
+      i {
+        background-color: #000000;
+      }
       .ion-label-names {
         
         margin-left: 10px;
@@ -63,7 +64,7 @@
       }
       
       .ion-footer-bg-color {
-        background: #eb445a;
+        background: #e30f2b;
       }
 
       .ion-text-color {
@@ -71,7 +72,7 @@
       }
 
     }
-  }
+  
   
   .action-button {
     display: flex;
@@ -101,16 +102,21 @@
       color: #000000;
       font-weight: 800;
     }
+  }
+
+  ion-menu-toggle {
     ion-item {
-      padding-left: 20px;
-      margin-bottom: 10px;
+      // padding-left: 20px;
+      margin-bottom: px;
       color: #000000;
-      font-size: 24px;
+      font-size: 14px;
     }
+  }
+  
     // .nav-links {
     //   text-decoration: unset !important;
     // }
-  }
+  
 
 //adjustments
   .name {
@@ -124,7 +130,7 @@
 
 .image-logo {
 
-  top: 60px !important;
+  top: 50px !important;
   left: 90px !important;
 
 }

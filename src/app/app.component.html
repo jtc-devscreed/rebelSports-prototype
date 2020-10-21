@@ -1,37 +1,50 @@
 <ion-app>
     <ion-menu menuId="main-menu" content-id="main" class="bottom-background">
     
-      <ion-content text>
+      <ion-content color="dark">
+        <ion-card color="dark">
         <div class="menu-header-bg">
           <div class="header-content image-logo" >
-            <img src="../assets/rebelsports-logo.png" alt="">
-            <h3 color="light" strong> Soccer Juice </h3>
+            <img src="../assets/icon/icon1.png" alt="">
+            <br>
+            <h3 color="light" strong> <b> [Soccer Juice] </b> </h3>
+            <br>
           </div>
-         
+        
         </div>
-
+        </ion-card> 
           <div>
+            <div class="ion-text-center">
+              
+              <ion-img src="assets/images/sidebar/sidebar1.jpeg" style="width:100%; margin:0; padding:0; ">
+                
+              </ion-img> 
+              <i style="font-size: 12px;"> Credit to: Manu Mangalassery (photo) </i>
+                     
+            </div>
+
+        
             <ion-menu-toggle>
               <ion-list color="dark">
                 
                 <ion-item lines="full"
                   slot="start"
                   routerLink="../home">
-                  <ion-icon name="newspaper" color="dark"></ion-icon>
+                  <ion-icon name="mic" color="dark"></ion-icon>
                   <ion-label color="dark" class="ion-margin"> AN INTRODUCTION </ion-label>  
                 </ion-item>
                 
                 <ion-item lines="full"
                   slot="start"
                   routerLink="../videos">
-                  <ion-icon name="videocam" color="dark"></ion-icon>
-                  <ion-label color="dark" class="ion-margin"> RULES RULES RULES </ion-label>
+                  <ion-icon name="shield-checkmark" color="dark"></ion-icon>
+                  <ion-label color="dark" class="ion-margin"> THE RULES </ion-label>
                 </ion-item>
 
-                <ion-item lines="full"
+                <ion-item lines="none"
                   slot="start"
                   routerLink="../teams">
-                  <ion-icon name="people" color="dark"></ion-icon>
+                  <ion-icon name="megaphone" color="dark"></ion-icon>
                   <ion-label color="dark" class="ion-margin"> THE OFFSIDES </ion-label>
                 </ion-item>
 
@@ -40,11 +53,14 @@
           </div>
       </ion-content>
      
-      <ion-footer>
-        <ion-toolbar color="danger">
-          <ion-title></ion-title>
+      <ion-footer>        
+        <ion-toolbar color="dark">
+          <ion-card color="dark">
+            <ion-img src="assets/banner/banner2.png" style="width: 100%; margin: auto;"></ion-img>
+          </ion-card>
         </ion-toolbar>
       </ion-footer>
+
       </ion-menu>
       <ion-router-outlet id="main"></ion-router-outlet>            
 
