@@ -32,15 +32,6 @@
         </ion-card-content>
   </ion-card>
 
-
-<!-- // Try First -->
-
-
-
-<!-- // End of Try -->
-<!-- 
-  <ion-list></ion-list> -->
-
   <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
     <ion-infinite-scroll-content
       loadingSpinner="crescent"
@@ -50,23 +41,11 @@
  </ion-content>
 
 
-<!-- // FOOTER -->
-<ion-footer>
+ <ion-footer color="danger">
   <ion-toolbar>
     <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="account">
-          <ion-icon></ion-icon>
-
-        </ion-tab-button>
-        <ion-tab-button tab="contact">
-          <ion-icon size="1"></ion-icon>
-            <ion-img src="assets/icon/rebelsports-logo.png" style="width: 45px; height: 45;"></ion-img>
-        </ion-tab-button>
-
-        <ion-tab-button tab="settings">
-          <ion-icon></ion-icon>
-        </ion-tab-button>
+      <ion-tab-bar>          
+        <ion-img src="assets/icon/icon2.png" style="width: 45px; height: 45;"></ion-img>
       </ion-tab-bar>
     </ion-tabs>
   </ion-toolbar>
